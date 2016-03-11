@@ -1,0 +1,12 @@
+{
+  "name": "webit/shortcut_statuscodes",
+  "type": "typo3-cms-extension",
+  "description": "Different HTTP statuscodes for shortcuts",
+  "homepage": "https://github.com/webit-de/typo3-shortcut_statuscodes",
+  "license": ["GPL-2.0+"],
+  "keywords": ["shortcut", "statuscode", "redirect", "forwarding", "301"],
+  "support": {
+    "issues": "https://github.com/webit-de/typo3-shortcut_statuscodes/issues"
+  },
+  "version": "1.0.0"
+}
