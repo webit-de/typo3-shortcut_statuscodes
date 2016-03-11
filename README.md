@@ -16,7 +16,7 @@ TER Entry http://typo3.org/extensions/repository/view/shortcut_statuscodes/
 Source
 ------
 
-https://github.com/webit-de/typo3-shortcut_statuscodes/tree/master/shortcut_statuscodes/
+https://github.com/webit-de/typo3-shortcut_statuscodes/tree/master/
 
 Documentation
 -------------
@@ -41,7 +41,7 @@ for webit! Gesellschaft für neue Medien mbH (http://www.webit.de/)
 Changelog
 ---------
 
-https://github.com/webit-de/typo3-shortcut_statuscodes/blob/master/shortcut_statuscodes/Changelog.md
+https://github.com/webit-de/typo3-shortcut_statuscodes/blob/master/Changelog.md
 
 Contribution
 ------------

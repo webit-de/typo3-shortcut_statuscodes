@@ -105,7 +105,7 @@ patches.
 Changelog
 ---------
 
-- https://github.com/webit-de/typo3-shortcut_statuscodes/blob/master/shortcut_statuscodes/Changelog.md
+- https://github.com/webit-de/typo3-shortcut_statuscodes/blob/master/Changelog.md
 
 Contribution
 ------------
