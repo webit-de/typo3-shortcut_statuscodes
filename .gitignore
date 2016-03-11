@@ -1,0 +1,7 @@
+### Folders
+.idea
+
+### Files
+*.bat
+*.sublime-*
+/build/build.local.properties
