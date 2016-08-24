@@ -24,7 +24,7 @@ class ShortcutStatuscodesTypoScriptFrontendController extends TypoScriptFrontend
 		$this->calculateLinkVars();
 		// Instantiate \TYPO3\CMS\Frontend\ContentObject to generate the correct target URL
 		/** @var $cObj ContentObjectRenderer */
-		$cObj = GeneralUtility::makeInstance(ContentObjectRenderer::class);
+		$cObj = GeneralUtility::makeInstance('TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer');
 		$parameter = $this->page['uid'];
 		$type = GeneralUtility::_GET('type');
 		if ($type && MathUtility::canBeInterpretedAsInteger($type)) {
