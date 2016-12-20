@@ -14,6 +14,28 @@ use TYPO3\CMS\Frontend\Page\PageRepository;
  */
 class ShortcutStatuscodesTypoScriptFrontendController extends TypoScriptFrontendController {
 
+	const LANGUAGE_OPTION_NONE = -1;
+
+	public function settingLanguage() {
+
+		$explicitShortcutLanguage = (int)$this->originalShortcutPage['tx_shortcutstatuscodes_language'];
+
+		if(
+			!is_null($this->originalShortcutPage)
+			&& $this->originalShortcutPage['shortcut_mode'] == PageRepository::SHORTCUT_MODE_NONE // Language selection only for 'selected page' shortcut mode.
+			&& $explicitShortcutLanguage !== self::LANGUAGE_OPTION_NONE
+		) {
+			// Set sys_language_uid to link target page language.
+			//
+			// Otherwise, pages without default language content, and with l18n_cfg set to 'Hide default translation of page',
+			// will throw a 404 return code, rather than redirecting to the localized version of the page as explicitly
+			// configured via tx_shortcutstatuscodes_language.
+			$this->config['config']['sys_language_uid'] = $explicitShortcutLanguage;
+		}
+
+		parent::settingLanguage();
+	}
+
 	/**
 	 * Builds a typolink to the current page, appends the type paremeter if required
 	 * and redirects the user to the generated URL using a Location header.
@@ -30,7 +52,15 @@ class ShortcutStatuscodesTypoScriptFrontendController extends TypoScriptFrontend
 		if ($type && MathUtility::canBeInterpretedAsInteger($type)) {
 			$parameter .= ',' . $type;
 		}
-		$redirectUrl = $cObj->typoLink_URL(array('parameter' => $parameter));
+		$typoLinkConf = array('parameter' => $parameter);
+
+		$explicitLanguage = (int)$this->originalShortcutPage['tx_shortcutstatuscodes_language'];
+		if($explicitLanguage !== self::LANGUAGE_OPTION_NONE) {
+			$typoLinkConf['additionalParams'] = '&L=' . $explicitLanguage;
+		}
+
+
+		$redirectUrl = $cObj->typoLink_URL($typoLinkConf);
 
 		// Prevent redirection loop
 		if (!empty($redirectUrl)) {
@@ -47,4 +77,3 @@ class ShortcutStatuscodesTypoScriptFrontendController extends TypoScriptFrontend
 	}
 
 }
-?>

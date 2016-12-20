@@ -1,6 +1,14 @@
 Changelog
 =========
 
+2016-12-20 Leonie Bitto <leonie@netcreators.nl>
+
+  * 2.1.0
+  * FEATURE Allow explicit link target language selection.
+    - BUGFIX Define default value for DB field pages.tx_shortcutstatuscodes_language to be -1, which
+      equals \Webit\ShortcutStatuscodes\Controller\ShortcutStatuscodesTypoScriptFrontendController::LANGUAGE_OPTION_NONE.
+    - BUGFIX Allow links to localized pages without default language content.
+
 2016-08-24 Dan Untenzu <untenzu@webit.de>
 
   * 2.0.0
