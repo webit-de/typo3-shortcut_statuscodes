@@ -8,4 +8,3 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\CMS\Frontend\Controller\Typ
 		'className' => 'Webit\ShortcutStatuscodes\Controller\ShortcutStatuscodesTypoScriptFrontendController'
 );
 
-?>
