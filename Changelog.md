@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2017-05-06 Dan Untenzu <untenzu@webit.de>
+
+  * 2.1.1
+  * BUGFIX Database analyzer espects a different SQL format
+  * TASK Remove version from composer declaration
+
 2016-12-20 Leonie Bitto <leonie@netcreators.nl>
 
   * 2.1.0
