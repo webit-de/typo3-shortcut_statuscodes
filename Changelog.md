@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2017-07-06 Dan Untenzu <untenzu@webit.de>
+
+  * 2.2.0
+  * FEATURE Compatibility with TYPO3 8.7
+
 2017-05-06 Dan Untenzu <untenzu@webit.de>
 
   * 2.1.1
