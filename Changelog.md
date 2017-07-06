@@ -3,6 +3,12 @@ Changelog
 
 2017-07-06 Dan Untenzu <untenzu@webit.de>
 
+  * 3.0.0
+  * FEATURE Switch to PSR-2
+  * TASK Drop support for TYPO3 6.2
+
+2017-07-06 Dan Untenzu <untenzu@webit.de>
+
   * 2.2.0
   * FEATURE Compatibility with TYPO3 8.7
 
