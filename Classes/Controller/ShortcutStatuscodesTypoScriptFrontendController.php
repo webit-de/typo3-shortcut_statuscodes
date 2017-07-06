@@ -21,7 +21,7 @@ class ShortcutStatuscodesTypoScriptFrontendController extends TypoScriptFrontend
         $explicitShortcutLanguage = (int)$this->originalShortcutPage['tx_shortcutstatuscodes_language'];
 
         if (
-            !is_null($this->originalShortcutPage)
+            null !== $this->originalShortcutPage
             && $this->originalShortcutPage['shortcut_mode'] == PageRepository::SHORTCUT_MODE_NONE // Language selection only for 'selected page' shortcut mode.
             && $explicitShortcutLanguage !== self::LANGUAGE_OPTION_NONE
         ) {
