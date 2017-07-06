@@ -73,8 +73,6 @@ Configuration
 
 - Grab this extension from TER and install it
 
-- The extension won't install any tables or any additional fields
-
 Reference
 ^^^^^^^^^
 
