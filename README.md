@@ -11,7 +11,9 @@ for further explanations about the usage of this extension.
 TYPO3 Package
 -------------
 
-TER Entry http://typo3.org/extensions/repository/view/shortcut_statuscodes/
+TER Entry https://typo3.org/extensions/repository/view/shortcut_statuscodes/
+
+Packagist Entry https://packagist.org/packages/webit-de/shortcut_statuscodes/
 
 Source
 ------
