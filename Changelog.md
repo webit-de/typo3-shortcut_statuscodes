@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2017-08-15 Dan Untenzu <untenzu@webit.de>
+
+  * 4.0.0
+  * TASK Change composer vendor name → require »webit-de/shortcut_statuscodes«
+    instead of »webit/shortcut_statuscodes«
+
 2017-07-06 Dan Untenzu <untenzu@webit.de>
 
   * 3.0.0
