@@ -1,5 +1,5 @@
 {
-  "name": "webit/shortcut_statuscodes",
+  "name": "webit-de/shortcut_statuscodes",
   "description": "Different HTTP statuscodes for shortcuts",
   "homepage": "https://github.com/webit-de/typo3-shortcut_statuscodes",
   "license": ["GPL-2.0+"],
@@ -15,6 +15,7 @@
   },
   "replace": {
     "shortcut_statuscodes": "self.version",
-    "typo3-ter/shortcut_statuscodes": "self.version"
+    "typo3-ter/shortcut_statuscodes": "self.version",
+    "webit/shortcut_statuscodes": "self.version"
   }
 }
