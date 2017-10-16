@@ -1,7 +1,14 @@
 ### Folders
 .idea
+/vendor/
+/build/vendor/
+.sass-cache
+node_modules
+/src/html/build
 
 ### Files
 *.bat
 *.sublime-*
 /build/build.local.properties
+npm-debug.log
+/composer.phar
