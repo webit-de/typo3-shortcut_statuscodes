@@ -8,8 +8,17 @@ shortcut for a page.
 Note: This is patch extension - please take a look into the documentation
 for further explanations about the usage of this extension.
 
-TYPO3 Package
--------------
+[![Packagist](https://img.shields.io/packagist/v/webit-de/shortcut_statuscodes.svg)](https://packagist.org/packages/webit-de/shortcut_statuscodes/)
+[![TYPO3](https://img.shields.io/badge/TYPO3-extension-orange.svg)](https://extensions.typo3.org/extension/shortcut_statuscodes/)
+
+Requirements
+------------
+
+* PHP
+* TYPO3
+
+Installation
+------------
 
 TER Entry https://typo3.org/extensions/repository/view/shortcut_statuscodes/
 
@@ -18,7 +27,7 @@ Packagist Entry https://packagist.org/packages/webit-de/shortcut_statuscodes/
 Source
 ------
 
-https://github.com/webit-de/typo3-shortcut_statuscodes/tree/master/
+https://github.com/webit-de/typo3-shortcut_statuscodes/
 
 Documentation
 -------------
@@ -43,7 +52,7 @@ for webit! Gesellschaft für neue Medien mbH (http://www.webit.de/)
 Changelog
 ---------
 
-https://github.com/webit-de/typo3-shortcut_statuscodes/blob/master/Changelog.md
+[./Changelog.md](./Changelog.md)
 
 Contribution
 ------------
