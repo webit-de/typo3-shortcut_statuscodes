@@ -2,7 +2,7 @@
   "name": "webit-de/shortcut_statuscodes",
   "description": "Different HTTP statuscodes for shortcuts",
   "homepage": "https://github.com/webit-de/typo3-shortcut_statuscodes",
-  "license": ["GPL-2.0+"],
+  "license": "GPL-2.0-or-later",
   "type": "typo3-cms-extension",
   "require": {
     "php": ">=5.6.0",
