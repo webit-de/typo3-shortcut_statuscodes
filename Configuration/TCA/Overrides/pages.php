@@ -7,6 +7,7 @@ $additionalColumns = array(
         'displayCond' => 'FIELD:shortcut_mode:=:' . \TYPO3\CMS\Frontend\Page\PageRepository::SHORTCUT_MODE_NONE,
         'config' => array(
             'type' => 'select',
+            'renderType' => 'selectSingle',
             'special' => 'languages',
             'items' => array(
                 array(
