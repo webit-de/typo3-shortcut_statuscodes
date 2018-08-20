@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2018-08-20 Dan Untenzu <untenzu@webit.de>
+
+  * 4.1.1
+  * BUGFIX Fix TCA config of select field to remove deprecation message - Thanks to Mathias Brodala
+
 2018-02-05 Dan Untenzu <untenzu@webit.de>
 
   * 4.1.0
