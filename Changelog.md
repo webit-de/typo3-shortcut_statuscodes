@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2019-04-24 Dan Untenzu <untenzu@webit.de>
+
+  * 4.2.0
+  * FEATURE Compatibility with TYPO3 9.5 - Thanks to Florian Wessels / Bitmotion
+
 2018-08-20 Dan Untenzu <untenzu@webit.de>
 
   * 4.1.1
@@ -34,10 +39,10 @@ Changelog
   * BUGFIX Database analyzer espects a different SQL format
   * TASK Remove version from composer declaration
 
-2016-12-20 Leonie Bitto <leonie@netcreators.nl>
+2016-12-20 
 
   * 2.1.0
-  * FEATURE Allow explicit link target language selection.
+  * FEATURE Allow explicit link target language selection - Thanks to Leonie Bitto <leonie@netcreators.nl>
     - BUGFIX Define default value for DB field pages.tx_shortcutstatuscodes_language to be -1, which
       equals \Webit\ShortcutStatuscodes\Controller\ShortcutStatuscodesTypoScriptFrontendController::LANGUAGE_OPTION_NONE.
     - BUGFIX Allow links to localized pages without default language content.
