@@ -53,24 +53,29 @@ class ShortcutStatuscodesTypoScriptFrontendController extends TypoScriptFrontend
         if ($type && MathUtility::canBeInterpretedAsInteger($type)) {
             $parameter .= ',' . $type;
         }
-        $typoLinkConf = array('parameter' => $parameter);
 
+        // Keep existing query arguments
+        $typoLinkConf = [
+            'parameter' => $parameter,
+            'addQueryString' => true,
+            'addQueryString.' => ['exclude' => 'id']
+        ];
         $explicitLanguage = (int)$this->originalShortcutPage['tx_shortcutstatuscodes_language'];
         if ($explicitLanguage !== self::LANGUAGE_OPTION_NONE) {
             $typoLinkConf['additionalParams'] = '&L=' . $explicitLanguage;
         }
-
         $redirectUrl = $cObj->typoLink_URL($typoLinkConf);
 
+        // HTTP Status code header - dependent on shortcut type
+        // 307 for redirects to rather random pages (first subpage, random subpage, parent page)
+        // 301 for redirects to a well-defined page
+        $redirectStatus = HttpUtility::HTTP_STATUS_307;
+        if ($this->originalShortcutPage['shortcut_mode'] == PageRepository::SHORTCUT_MODE_NONE) {
+            $redirectStatus = HttpUtility::HTTP_STATUS_301;
+        }
+
         // Prevent redirection loop
-        if (!empty($redirectUrl)) {
-            // HTTP Status code header - dependent on shortcut type
-            // 307 for redirects to rather random pages (first subpage, random subpage, parent page)
-            // 301 for redirects to a well-defined page
-            $redirectStatus = HttpUtility::HTTP_STATUS_307;
-            if ($this->originalShortcutPage['shortcut_mode'] == PageRepository::SHORTCUT_MODE_NONE) {
-                $redirectStatus = HttpUtility::HTTP_STATUS_301;
-            }
+        if (!empty($redirectUrl) && GeneralUtility::getIndpEnv('REQUEST_URI') !== '/' . $redirectUrl) {
             // redirect and exit
             HttpUtility::redirect($redirectUrl, $redirectStatus);
         }
