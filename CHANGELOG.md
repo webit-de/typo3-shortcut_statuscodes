@@ -1,5 +1,10 @@
 # Changelog
 
+2020-01-23 Dan Untenzu <untenzu@webit.de>
+  * 5.0.0
+  * FEATURE Keep existing query arguments
+  * TASK Drop support for TYPO3 7.6
+
 2019-04-24 Dan Untenzu <untenzu@webit.de>
 
   * 4.2.0
