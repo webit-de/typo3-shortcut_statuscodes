@@ -1,5 +1,9 @@
 # Changelog
 
+2020-05-19 Dan Untenzu <untenzu@webit.de>
+  * 5.1.0
+  * FEATURE Raise supported PHP versions (7.3 & 7.4)
+
 2020-01-23 Dan Untenzu <untenzu@webit.de>
   * 5.0.0
   * FEATURE Keep existing query arguments
