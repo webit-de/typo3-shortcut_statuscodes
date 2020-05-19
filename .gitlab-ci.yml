@@ -1,0 +1,31 @@
+### GENERAL ###
+
+image: chialab/php:7.2-apache
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - vendor/
+
+stages:
+  - lint
+  - test
+
+before_script:
+  - apt-get update -yqq
+  - apt-get install curl ssh rsync git -yqq
+  - composer install
+
+### JOBS ###
+
+job_lint_app_phpdefaultversion: &definition_lint_app_phpdefaultversion
+  stage: lint
+  script:
+    - composer require --dev friendsofphp/php-cs-fixer:^2.0 jakub-onderka/php-parallel-lint:^1.0
+    - vendor/bin/php-cs-fixer -vvv fix . --dry-run --diff --using-cache=no --rules=@PSR2
+    - vendor/bin/parallel-lint --exclude vendor .
+
+job_lint_app_phpnextversion:
+  <<: *definition_lint_app_phpdefaultversion
+  image: chialab/php:7.3-apache
+  allow_failure: true
