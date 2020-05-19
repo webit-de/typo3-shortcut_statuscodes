@@ -29,3 +29,8 @@ job_lint_app_phpnextversion:
   <<: *definition_lint_app_phpdefaultversion
   image: chialab/php:7.3-apache
   allow_failure: true
+
+job_lint_app_phpafternextversion:
+  <<: *definition_lint_app_phpdefaultversion
+  image: chialab/php:7.4-apache
+  allow_failure: true
