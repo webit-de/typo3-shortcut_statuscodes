@@ -14,8 +14,6 @@
     }
   },
   "replace": {
-    "shortcut_statuscodes": "self.version",
-    "typo3-ter/shortcut_statuscodes": "self.version",
-    "webit/shortcut_statuscodes": "self.version"
+    "typo3-ter/shortcut_statuscodes": "self.version"
   }
 }
