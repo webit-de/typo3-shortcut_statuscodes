@@ -1,5 +1,7 @@
 <?php
 
+// TODO: Change namespace of PageRepository when dropping support for TYPO3 9
+// https://docs.typo3.org/c/typo3/cms-core/10.2/en-us/Changelog/10.0/Deprecation-88746-PageRepositoryPHPClassMovedFromFrontendToCoreExtension.html
 $additionalColumns = array(
     'tx_shortcutstatuscodes_language' => array(
         'exclude' => 0,
@@ -12,7 +14,7 @@ $additionalColumns = array(
             'items' => array(
                 array(
                     'LLL:EXT:shortcut_statuscodes/Resources/Private/Language/locallang_tca.xlf:pages.tx_shortcutstatuscodes_void_option',
-                    \Webit\ShortcutStatuscodes\Controller\ShortcutStatuscodesTypoScriptFrontendController::LANGUAGE_OPTION_NONE
+                    -1
                 ),
             ),
         )
