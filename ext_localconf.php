@@ -4,5 +4,5 @@ if (!defined('TYPO3_MODE')) {
 }
 
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects'][\TYPO3\CMS\Frontend\Middleware\ShortcutAndMountPointRedirect::class] = [
-    'className' => \Webit\ShortcutStatuscodes\Middleware\ShortcutAndMountPointRedirect::class,
+    'className' => \WebitDe\ShortcutStatuscodes\Middleware\ShortcutAndMountPointRedirect::class
 ];

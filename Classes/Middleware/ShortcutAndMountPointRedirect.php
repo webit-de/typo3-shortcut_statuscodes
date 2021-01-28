@@ -1,5 +1,5 @@
 <?php
-namespace Webit\ShortcutStatuscodes\Middleware;
+namespace WebitDe\ShortcutStatuscodes\Middleware;
 
 /*
  * This file is part of the TYPO3 CMS project.
