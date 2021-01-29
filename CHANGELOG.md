@@ -1,15 +1,27 @@
 # Changelog
 
+2021-01-29 Dan Untenzu <untenzu@webit.de>
+
+* FEATURE Compatibility with TYPO3 10.4 - Thanks to Christian Fries
+* TASK Drop support for TYPO3 8.7
+* TASK Drop support for PHP < 7.2
+* BUGFIX Change namespace
+* FEATURE Remove language selection field - Braking Change!
+  No replacement available (see #12), existing redirects will use
+  the same language as the shortcut page now
+
 2020-10-12 Dan Untenzu <untenzu@webit.de>
 
   * 5.1.1
   * BUGFIX Composer: Remove invalid short name
 
 2020-05-19 Dan Untenzu <untenzu@webit.de>
+
   * 5.1.0
   * FEATURE Raise supported PHP versions (7.3 & 7.4)
 
 2020-01-23 Dan Untenzu <untenzu@webit.de>
+
   * 5.0.0
   * FEATURE Keep existing query arguments
   * TASK Drop support for TYPO3 7.6
