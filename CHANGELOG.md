@@ -2,13 +2,20 @@
 
 2021-01-29 Dan Untenzu <untenzu@webit.de>
 
-* FEATURE Compatibility with TYPO3 10.4 - Thanks to Christian Fries
-* TASK Drop support for TYPO3 8.7
-* TASK Drop support for PHP < 7.2
-* BUGFIX Change namespace
-* FEATURE Remove language selection field - Braking Change!
-  No replacement available (see #12), existing redirects will use
-  the same language as the shortcut page now
+  * 6.0.1
+  * BUGFIX Restore different status codes for each shortcut mode - Thanks to
+    Christian Fries
+
+2021-01-29 Dan Untenzu <untenzu@webit.de>
+
+  * 6.0.0
+  * FEATURE Compatibility with TYPO3 10.4 - Thanks to Christian Fries
+  * TASK Drop support for TYPO3 8.7
+  * TASK Drop support for PHP < 7.2
+  * BUGFIX Change namespace
+  * FEATURE Remove language selection field - Braking Change!
+    No replacement available (see #12), existing redirects will use
+    the same language as the shortcut page now
 
 2020-10-12 Dan Untenzu <untenzu@webit.de>
 
