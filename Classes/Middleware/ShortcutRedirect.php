@@ -21,9 +21,9 @@ class ShortcutRedirect implements MiddlewareInterface
      */
     private $controller;
 
-    public function __construct(TypoScriptFrontendController $controller)
+    public function __construct(TypoScriptFrontendController $controller = null)
     {
-        $this->controller = $controller;
+        $this->controller = $controller ?: $GLOBALS['TSFE'];
     }
 
     /**
