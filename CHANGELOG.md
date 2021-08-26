@@ -1,5 +1,10 @@
 # Changelog
 
+2021-08-26 Dan Untenzu <untenzu@webit.de>
+
+  * 6.1.0
+  * TASK Composer: Add extension key - Thanks to Guido Schmechel
+
 2021-01-29 Dan Untenzu <untenzu@webit.de>
 
   * 6.0.1
