@@ -1,5 +1,14 @@
 # Changelog
 
+2023-02-24 Florian Strehlau <strehlau@webit.de>
+
+  * 6.2.0
+  * FEATURE Introduce TYPO3 11 LTS compatiblity - Thanks to Benedikt Imminger
+  * TASK Update ext_emconf dependencies
+  * TASK Remove TYPO3 9 compatibility because of updated PageRepository reference
+  * TASK Use TYPO3\CMS\Core\Domain\Repository\PageRepository instead of TYPO3\CMS\Frontend\Page\PageRepository (deprecation #88746)
+  * TASK Require TYPO3 11 in composer.json
+
 2021-08-26 Dan Untenzu <untenzu@webit.de>
 
   * 6.1.0
