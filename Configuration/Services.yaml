@@ -7,9 +7,8 @@ services:
   WebitDe\ShortcutStatuscodes\:
     resource: '../Classes/*'
 
-  TYPO3\CMS\Core\Routing\PageArguments:
-    autowire: false
-  TYPO3\CMS\Core\Site\Entity\Site:
-    autowire: false
-  TYPO3\CMS\Core\Site\Entity\SiteLanguage:
-    autowire: false
+  WebitDe\ShortcutStatuscodes\Middleware\ShortcutRedirect:
+  arguments:
+    $controller: null
+
+
