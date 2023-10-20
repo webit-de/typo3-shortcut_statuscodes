@@ -8,14 +8,11 @@ $EM_CONF[$_EXTKEY] = array(
     'author_email' => 'untenzu@webit.de',
     'author_company' => '',
     'state' => 'stable',
-    'uploadfolder' => 0,
-    'createDirs' => '',
-    'clearCacheOnLoad' => 0,
     'version' => '6.1.0',
     'constraints' => array(
         'depends' => array(
-            'typo3' => '10.4.99-11.5.99',
-            'php' => '7.2.0-7.4.99',
+            'typo3' => '10.4.99-12.4.99',
+            'php' => '7.2.0-8.1.99',
         ),
         'conflicts' => array(
         ),
