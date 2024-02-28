@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace WebitDe\ShortcutStatuscodes\Middleware;
@@ -27,7 +28,9 @@ class ShortcutRedirect implements MiddlewareInterface
     }
 
     /**
-     * @param ServerRequestInterface  $request
+     * Processes the server request and returns the response.
+     *
+     * @param ServerRequestInterface $request
      * @param RequestHandlerInterface $handler
      *
      * @return ResponseInterface
@@ -49,20 +52,18 @@ class ShortcutRedirect implements MiddlewareInterface
     }
 
     /**
-     * Return the uri to redirect to.
+     * Retrieves the redirect URI based on the provided request.
      * Taken from \TYPO3\CMS\Frontend\Middleware\ShortcutAndMountPointRedirect
      *
      * @param ServerRequestInterface $request
+     *
      * @return string|null
      */
     protected function getRedirectUri(ServerRequestInterface $request): ?string
     {
         $redirectToUri = $this->controller->getRedirectUriForShortcut($request);
-        if ($redirectToUri !== null) {
-            return $redirectToUri;
-        }
 
-        return $this->controller->getRedirectUriForMountPoint($request);
+        return $redirectToUri ?? $this->controller->getRedirectUriForMountPoint($request);
     }
 
     /**
@@ -73,7 +74,7 @@ class ShortcutRedirect implements MiddlewareInterface
     protected function getRedirectStatusCode(): int
     {
         $originalShortcutPage = $this->controller->__get('originalShortcutPage');
-        if (!empty($originalShortcutPage) && $originalShortcutPage['shortcut_mode'] === PageRepository::SHORTCUT_MODE_NONE) {
+        if (!empty($originalShortcutPage) && ($originalShortcutPage['shortcut_mode'] === PageRepository::SHORTCUT_MODE_NONE || $originalShortcutPage['shortcut_mode'] === PageRepository::SHORTCUT_MODE_FIRST_SUBPAGE)) {
             return 301;
         }
 
