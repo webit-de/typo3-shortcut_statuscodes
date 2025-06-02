@@ -1,5 +1,11 @@
 # Changelog
 
+2025-06-02 Florian Strehlau <strehlau@webit.de>
+
+* 7.0.0
+* FEATURE Implement TYPO3 v12 compatibility and update redirection behavior
+* TASK Sets 301 instead of 307 status code also for the first subpage shortcut mode
+
 2023-02-24 Florian Strehlau <strehlau@webit.de>
 
   * 6.2.0
