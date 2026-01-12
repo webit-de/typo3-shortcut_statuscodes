@@ -1,5 +1,10 @@
 # Changelog
 
+2026-01-12 Florian Strehlau <strehlau@webit.de>
+
+* 8.0.0
+*	[TASK] Compatibility TYPO3 v13 - Thanks to Nikita Hovratov
+
 2025-06-02 Florian Strehlau <strehlau@webit.de>
 
 * 7.0.0
