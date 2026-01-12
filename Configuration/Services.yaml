@@ -6,7 +6,3 @@ services:
 
   WebitDe\ShortcutStatuscodes\:
     resource: '../Classes/*'
-
-  WebitDe\ShortcutStatuscodes\Middleware\ShortcutRedirect:
-    arguments:
-      $controller: null
